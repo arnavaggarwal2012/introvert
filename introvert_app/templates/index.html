@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+
+{% block css %}<link rel="stylesheet" href="/static/css/index.css"/><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">{% endblock css %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+  <div style="height: 100vh; background-image: url(static/assets/img/mountains2.jpg)">
+
+      <div class="box1">
+        HEY, INTROVERTS
+        <p style="font-size: 20px; font-weight: lighter; text-align: center; font-family: 'Playfair Display', serif;">
+          There is a tremendous difference between alone and lonely. You could be lonely in a group of people. I like being alone. I like eating by myself. I go home at night and just watch a movie or hang out with my dog ~ via an Introvert
+        </p>
+        <a href="/signup" style="padding: 10px; margin-top: 40px;">SIGN UP</a>
+        <p>{{signupMessage}}</p>
+      </div>
+    </div>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0">
+      <div id="about-us"></div>
+      <div class="about container-fluid">
+     <br><h1>About Us</h1>
+        <br />
+        <p style="width: 50%; margin: auto; text-align: center; font-family: 'Playfair Display', serif; color: white;">
+          <br>
+          We're a team of 5 members (all introverts), thus the website. Here, you can interact with other introverts like yourself, read their blogs, talk to them, play with them & simultaneously listen to some music too! Sounds fun right?
+        </p>
+      </div>
+      <footer id="contact-us">
+        <h1>Contact Us</h1>
+        <br>
+        <br>
+        <p style="width: 50%; margin: auto; text-align: center;font-family: 'Playfair Display', serif;">
+          We love to hear from our adoring fans, but feel free to fling
+          tomatoes in our direction if you must. We have some vegetarians on staff that we feed those to (if they're not too badly damaged).
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="contact_info">
+          <a class="logos" href="https://github.com/new"
+          target="_blank">
+            <i class="fab fa-github fa-1x" style="color: #4078c0"></i
+            >&nbsp;Github</a>
+
+        
+          <a class="logos" href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook fa-1x" style="color: #4267B2;"></i>&nbsp;Facebook</a>
+
+        
+          <a class="logos" href="https://twitter.com/?lang=en"target="_blank"
+            ><i class="fab fa-twitter-square fa-1x" style="color: #1da1f2"></i
+            >&nbsp;Twitter</a
+          >
+          
+          <a class="logos" href="https://www.instagram.com/"target="_blank"
+            ><i class="fab fa-instagram fa-1x" style="color: #dd2a7b"></i
+            >&nbsp;Instagram</a>
+
+        
+          <a class="logos" href="https://www.youtube.com/"target="_blank"
+            ><i class="fab fa-youtube fa-1x" style="color:#ff0000";></i
+            >&nbsp;Youtube</a
+          >
+        </div>
+      </footer>
+    </div>
+{% endblock body %}
